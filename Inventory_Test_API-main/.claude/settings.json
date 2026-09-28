@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(code-review)",
+      "Skill(code-review:*)",
+      "Bash(cd \"d:\\\\YEN ERP - INVENTORY\\\\YEN -IN BM\\\\Inventory api\" && git diff HEAD > /tmp/full.diff 2>/dev/null; wc -l /tmp/full.diff; git status --short | head -50)",
+      "Read(//tmp/**)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--YEN-ERP---INVENTORY-YEN--IN-BM-Inventory-api\\\\735c20ab-4487-4ada-900d-9084cacc1725\\\\scratchpad\" && cp /tmp/full.diff \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--YEN-ERP---INVENTORY-YEN--IN-BM-Inventory-api\\\\735c20ab-4487-4ada-900d-9084cacc1725\\\\scratchpad\\\\full.diff\" && wc -l \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--YEN-ERP---INVENTORY-YEN--IN-BM-Inventory-api\\\\735c20ab-4487-4ada-900d-9084cacc1725\\\\scratchpad\\\\full.diff\")",
+      "Read(//c/Users/DELL/.claude/**)",
+      "Bash(python -m py_compile db/collections.py db/indexes.py OutletInventoryVariance/funtions.py OutletInventoryVariance/routes.py WarehouseInventoryVariance/funtions.py WarehouseInventoryVariance/routes.py WarehouseInventory/models.py)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
+    ]
+  }
+}

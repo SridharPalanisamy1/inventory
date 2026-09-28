@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile core/lookups.py core/models.py OutletInventory/funtions.py OutletInventory/models.py OutletInventoryVariance/funtions.py OutletInventoryVariance/models.py OutletInventoryVariance/routes.py WarehouseInventory/funtions.py WarehouseInventory/models.py WarehouseInventoryVariance/funtions.py WarehouseInventoryVariance/models.py WarehouseInventoryVariance/routes.py)",
+      "Bash(python -c \"import inventorytestapi\")",
+      "Bash(python -m py_compile db/indexes.py OutletInventoryVariance/funtions.py OutletInventoryVariance/routes.py WarehouseInventoryVariance/funtions.py WarehouseInventoryVariance/routes.py)",
+      "Bash(python -m py_compile OutletInventoryVariance/funtions.py)",
+      "Bash(ls -la \"D:\\\\YEN ERP - INVENTORY\\\\YEN -IN BM\\\\Inventory ui\" 2>&1 | head -50)",
+      "Read(//d/YEN ERP - INVENTORY/YEN -IN BM/Inventory ui/**)",
+      "Bash(python -c ' *)",
+      "Bash(curl -s -m 5 http://192.168.1.116:8001/inventorytestapi/warehouseinventory/warehouses)",
+      "Bash(curl -s -m 5 http://localhost:8001/inventorytestapi/warehouseinventory/warehouses)",
+      "Bash(curl -s -m 10 \"http://localhost:8001/inventorytestapi/warehouseinventory/warehouses\")",
+      "Bash(curl -s -m 15 \"http://localhost:8001/inventorytestapi/warehouseinventory/?locationId=WH001&page=1&limit=10&includeDropdowns=true\")",
+      "Bash(curl -s -m 15 \"http://localhost:8001/inventorytestapi/warehouseinventory/?locationId=WH001&page=1&limit=1&includeDropdowns=true\")",
+      "Bash(npx tsc *)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(pkill -f \"uvicorn inventorytestapi:app\")",
+      "Bash(curl -s -m 3 http://localhost:8001/inventorytestapi/warehouseinventory/warehouses)",
+      "Bash(curl -s -m 5 \"http://localhost:8001/inventorytestapi/outletinventory/locations?limit=5\")",
+      "Bash(curl -s -m 10 \"http://localhost:8001/inventorytestapi/outletinventory/?branch=LOC001&page=1&limit=5&include_filter_options=true\")",
+      "Bash(python -m py_compile db/collections.py db/indexes.py db/connection.py OutletInventory/funtions.py OutletInventory/models.py OutletInventory/routes.py OutletInventoryVariance/funtions.py OutletInventoryVariance/models.py OutletInventoryVariance/routes.py WarehouseInventory/funtions.py WarehouseInventory/models.py WarehouseInventory/routes.py WarehouseInventoryVariance/funtions.py WarehouseInventoryVariance/models.py WarehouseInventoryVariance/routes.py core/lookups.py core/models.py inventorytestapi.py config.py)"
+    ],
+    "additionalDirectories": [
+      "D:\\YEN ERP - INVENTORY\\YEN -IN BM\\Inventory ui\\src\\components\\Inventory\\shared",
+      "D:\\YEN ERP - INVENTORY\\YEN -IN BM\\Inventory ui\\src\\components\\Inventory\\stock",
+      "D:\\YEN ERP - INVENTORY\\YEN -IN BM\\Inventory ui\\src\\features\\yen_inventory",
+      "D:\\YEN ERP - INVENTORY\\YEN -IN BM\\Inventory ui\\src\\features\\OutletPhysicalStockModification\\store"
+    ]
+  }
+}
