@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'ABeeZee', sans-serif !important; ;
+    font-size: 10rem; /* equivalent to small text size */
+  }
+  body {
+    @apply bg-white text-black; /* Set background color to white and text color to black */
+  }
+}
+body, input, button, select, textarea {
+  @apply text-black;
+}

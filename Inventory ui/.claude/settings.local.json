@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR==1366,NR==1470' \"src/app/yen-inventory/OutletsInventoryManagement/ledger/page.tsx\")",
+      "Bash(awk 'NR==470,NR==620' \"src/app/yen-inventory/OutletsInventoryManagement/ledger/page.tsx\")"
+    ]
+  }
+}

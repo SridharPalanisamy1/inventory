@@ -1,0 +1,140 @@
+.drawer-paper {
+  width: 60px;
+  box-sizing: border-box;
+  background-color: #1976d2 !important; /* Blue background */
+  color: white;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Subtle shadow */
+  font-family: 'Source Sans 3', sans-serif !important; /* Apply Roboto to input fields */
+  transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+  overflow-x: hidden; /* Prevent text overflow */
+}
+
+.drawer-paper.open {
+  width: 240px; /* Expanded width */
+}
+
+.drawer-paper.logged-in {
+  background-color: #1976d2 !important; /* Keep blue background */
+}
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px !important;
+  min-height: 64px !important;
+  background-color: #1976d2 !important; /* Keep header blue */
+  border: none !important;
+}
+
+.logo-container {
+  flex-grow: 1 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.menu-text {
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 12px !important;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px !important;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Source Sans 3', sans-serif!important; /* Apply Roboto to input fields */
+  background-color: #1976d2; /* Default background */
+  color: white !important; /* Ensure white text */
+  transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth background and scale transition */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflow */
+}
+.menu-item, .submenu-item {
+  display: flex !important;
+  align-items: center !important; /* Center icons vertically */
+  justify-content: center !important;
+}
+.menu-item .MuiListItemIcon-root, .submenu-item .MuiListItemIcon-root {
+  min-width: 40px; /* Control the minimum width for consistency */
+}
+
+.menu-item .MuiListItemIcon-root {
+  display: flex;
+  justify-content: center; /* Ensure icons are centered horizontally */
+}
+
+/* Icon size adjustments */
+.MuiSvgIcon-root {
+  font-size: 1.5rem !important; /* Adjust icon size to your preference */
+}
+
+/* Adjust submenu items */
+.submenu-item {
+  padding-left: 32px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  align-items: center; /* Ensure the submenu icon and text are aligned */
+}
+
+.menu-item:hover {
+  background-color: #4b96e6; /* Darker navy on hover */
+  transform: scale(1.02); /* Subtle scale effect on hover */
+}
+
+.menu-item.active {
+  background-color: #2c75d9; /* Darker blue for active items */
+  border-left: 4px solid #fff; /* Add white active indicator */
+}
+.MuiIconButton-root {
+  margin: 0 !important; /* Remove any margin that might offset the icons */
+}
+
+.submenu-item {
+  padding-left: 32px;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s, padding-left 0.3s, transform 0.3s ease-in-out;
+}
+
+.drawer-paper:not(.open) .submenu-item {
+  padding-left: 12px; /* Adjust padding */
+  font-size: 0; /* Hide text when collapsed */
+}
+
+/* Targeting icons within the drawer */
+.drawer-paper .MuiSvgIcon-root {
+  color: white !important; /* Ensure icons are white */
+}
+
+.submenu-item:hover {
+  background-color: #4b96e6; /* Darker blue on hover */
+  transform: translateX(4px); /* Subtle slide-in effect on hover */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  color: #4b96e6;
+  padding: 8px;
+  margin-top: auto; /* Push user info to bottom */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+  background-color: #fff; /* White background */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Top border for separation */
+}
+
+.user-info:hover {
+  background-color: #e3f2fd; /* Lighter blue on hover */
+}
+
+.logo{
+  width:100px;
+  height:50px;
+}
+.MuiTypography-root.menu-text-small {
+  font-size: 7px !important;
+  color: white !important;
+}

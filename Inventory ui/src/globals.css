@@ -1,0 +1,585 @@
+/* Import Tailwind's base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Define global custom properties */
+:root {
+  --foreground-rgb: 0, 0, 0; /* Black text */
+  --background-start-rgb: 255, 255, 255; /* White background */
+  --background-end-rgb: 255, 255, 255; /* White background */
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0; /* Keep text black */
+    --background-start-rgb: 255, 255, 255; /* White background in dark mode */
+    --background-end-rgb: 255, 255, 255; /* White background in dark mode */
+  }
+}
+* {
+  font-family:'Source Sans 3', sans-serif !important;
+}
+
+/* Global Body Styling */
+body {
+  color: rgb(var(--foreground-rgb)); /* Text color */
+  background: rgb(var(--background-start-rgb)); /* White background */
+  font-family:'Source Sans 3', sans-serif !important; /* Ensure ABeeZee is applied */
+  min-height: 100vh !important; /* Ensure body takes at least 100% of viewport height */
+  overflow-y: auto !important; /* Enable vertical scrolling if content exceeds height */
+}
+
+/* Global Button Styles */
+.MuiButton-root {
+  font-family:'Source Sans 3', sans-serif!important; /* Apply Roboto to MuiButton */
+  font-size: 11px !important; /* Set font size globally */
+  padding: 4px 6px !important; /* Adjust button size */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto !important;
+}
+.no-underline .MuiButton-root {
+  font-size: 14px !important; /* Set font size globally */
+  /* width: 110px !important; */
+}
+.no-underline-book .MuiButton-root {
+  font-size: 12px !important; /* Set font size globally */
+  width: 130px !important;
+}
+.some .MuiInputBase-root.MuiOutlinedInput-root {
+  font-family:'Source Sans 3', sans-serif !important; /* Apply font */
+  width: 30% !important;  /* Default width */
+  height: 30px !important;  /* Fixed height */
+  padding: 6px 5  px !important;  /* Adjust padding */
+}
+/* Global Tooltip Styling */
+.MuiTooltip-tooltip {
+  background-color: #1976d2 !important; /* Primary color for Tooltip background */
+  color: white !important; /* White text color */
+  font-size: 10px !important; /* Adjust font size if needed */
+}
+
+.MuiTooltip-arrow {
+  color: #1976d2 !important; /* Primary color for Tooltip arrow */
+}
+/* Media query for mobile screens */
+@media (max-width: 600px) {
+  .some .MuiInputBase-root.MuiOutlinedInput-root {
+    width: 100% !important; /* 100% width for mobile devices */
+  }
+}
+
+@media (min-width: 900px) {
+  .css-1a9y45k-MuiGrid-root {
+      -webkit-flex-basis: 8.333333%;
+      -ms-flex-preferred-size: 8.333333%;
+      flex-basis: 8.333333%;
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      max-width: 4.333333% !important;
+  }
+}
+
+
+/* Global Input Styling */
+.MuiInputBase-root.MuiOutlinedInput-root {
+  width: 100% !important;  /* Ensure full width */
+  height: 30px !important;  /* Fixed height */
+  padding: 6px 10px !important;  /* Adjust padding for better alignment */
+}
+
+.MuiInputBase-input {
+  line-height: 20px !important;  /* Vertically center the text */
+  height: 100% !important;  /* Ensure input takes full height */
+}
+
+input::placeholder {
+  text-align: center !important;  /* Horizontally center the placeholder */
+  line-height: 40px !important;  /* Vertically center the placeholder */
+  font-size: 10px !important;  /* Adjust placeholder font size */
+}
+
+/* Center the label text */
+/* Global Styling for MUI TextField Label */
+.MuiFormLabel-root {
+  font-size: 12px !important; /* Set the font size to small */
+  font-family:'Source Sans 3', sans-serif !important; /* Ensure consistent font */
+  line-height: 1.2 !important; /* Adjust the line height */
+  transform: translate(14px, 9px) scale(1) !important; /* Fix label positioning */
+  transition: none !important; /* Prevent label from animating larger on focus */
+}
+
+/* When TextField is focused or filled, reduce label size */
+.MuiInputLabel-shrink {
+  font-size: 10px !important; /* Small font size even when focused or filled */
+  transform: translate(14px, -6px) scale(0.75) !important; /* Adjust shrink behavior */
+}
+
+/* Globally style all MenuItem text */
+.MuiMenuItem-root {
+  font-family:'Source Sans 3', sans-serif!important; /* Ensure Roboto is used here too */
+  font-size: 10px !important;  /* Change the font size */
+}
+
+.MuiOutlinedInput-input {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.fs12p7ms30{
+  font-size: 16px !important;
+  padding: 7px !important;
+  margin-left: 30px !important;
+}
+.ms20{
+  margin-left: 20px !important; 
+}
+.ms50{
+  margin-left: 30px !important;
+}
+/* input[type="text"], input[type="number"] {
+  padding: 15px 2px !important;
+  font-size: 10px !important;
+  line-height: 20px !important;
+  display: flex;
+  align-items: center;
+  height: 10px !important;
+  width: 100%;
+} */
+.MuiInputBase-input, .MuiOutlinedInput-input {
+  padding: 15px 2px !important;
+  font-size: 10px !important;
+  line-height: 20px !important;
+  align-items: center;
+  height: 10px !important;
+  width: 100%;
+}
+
+/* Global Styles for Select Dropdown */
+.MuiSelect-select {
+  font-family:'Source Sans 3', sans-serif!important; /* Ensure Roboto is used here too */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  font-size: 10px !important;
+  width: 100% !important;  /* Ensure Select dropdown is full width */
+}
+
+.MuiSelect-select span {
+  display: inline-block;
+  font-size: 10px !important;
+}
+
+/* Typography Global Styles */
+.MuiTypography-root {
+  font-family:'Source Sans 3', sans-serif!important; /* Ensure Roboto is used here too */
+  font-size: 10px !important;
+}
+.fs12{
+  font-size: 16px !important;
+}
+/* Dialog Paper */
+.dialog .MuiDialog-paper {
+  width: 1200px; /* Fixed width for the dialog */
+  max-width: 80vw; /* Optional: To keep it responsive */
+  min-width: 500px; /* Minimum width */
+  padding: 16px; /* Add padding to avoid content sticking to the edges */
+}
+
+/* Content Styling */
+.dialog .dialog-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust columns based on the content */
+  grid-gap: 16px; /* Add spacing between elements */
+  padding: 20px 0; /* Some padding to make space inside */
+}
+
+/* Button Styles */
+ .dialog .upload-image-btn {
+  grid-column: span 2; /* Make the button span two columns */
+  justify-self: start;
+}
+
+.dialog .add-variance-btn {
+  width: 100%; /* Make sure the button takes full width */
+  margin-top: 20px; /* Add space between content and the button */
+}
+
+/* Table Content */
+.dialog .variance-table {
+  margin-top: 20px;
+  width: 100%; /* Ensure the table stretches across the dialog */
+}
+
+/* MUI Table Custom Styles */
+table {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+  border-collapse: collapse;
+  max-height: 400px; /* Set a max height to enable scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* MUI Table Cell Custom Styles */
+table td.MuiTableCell-root,
+table th.MuiTableCell-root {
+  font-family:'Source Sans 3', sans-serif!important; /* Ensure Roboto is used here too */
+  padding: 4px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* MUI Table Header Custom Styles */
+table th.MuiTableCell-head {
+  font-weight: bold !important; /* Bold font for headers */
+  padding: 8px 8px !important;
+  font-size: 13px !important;
+  background-color: #f5f5f5; /* Optional: Add background color to header */
+  position: sticky;
+  top: 0; /* Stick the header to the top */
+  /*z-index: 1; /* Ensure header is above the body */
+}
+
+/* MUI Table Body Custom Styles */
+table tbody {
+  display: block;
+  max-height: 300px; /* Set the height for the body to make it scrollable */
+  overflow-y: auto; /* Enable scrolling */
+  width: 100%;
+  font-size: 12px !important;
+  font-weight: 400 !important; /* Normal font weight for body */
+}
+
+/* Ensure table cells align properly */
+table td.MuiTableCell-root {
+  font-size: 12px !important;
+  font-weight: 400 !important; /* Normal font weight for body cells */
+  padding: 8px 8px !important;
+}
+/* Customize Switch Base */
+.PrivateSwitchBase-input {
+  transform: scale(0.4);
+}
+
+.MuiRadio-root {
+  transform: scale(0.7); /* Reduce the size of Radio */
+  padding-right: 2px; /* Adjust the padding */
+  padding-top: 1px;
+}
+
+/* Dialog Paper Custom Styles */
+.MuiDialog-paper {
+  min-width: 300px !important;
+  max-height: 80vh !important;
+  max-width: 1000px !important;
+}
+
+/* Dialog Content Styling */
+.MuiDialogContent-root {
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  max-height: calc(80vh - 64px);
+ 
+}
+
+.MuiFormControl-root {
+  width: 100% !important; /* Ensure the form control spans the full width */
+}
+
+.MuiInputBase-root, 
+.MuiSelect-root, 
+.MuiOutlinedInput-root, 
+.MuiTextField-root {
+  width: 100% !important;  /* Make all form elements take full width */
+}
+
+/* Global Checkbox Custom Styles */
+.MuiCheckbox-root {
+  transform: scale(0.6);
+}
+
+/* Dialog Title Styling */
+.MuiDialogTitle-root {
+  font-family:'Source Sans 3', sans-serif!important; /* Ensure Roboto is used here too */
+  font-weight: bold; /* Make dialog titles bold globally */
+}
+/* Ensure the Search field doesn't affect other inputs */
+.some .MuiOutlinedInput-root {
+  width: 30% !important;  /* Ensure the search input takes full width */
+  height: 40px !important;  /* Adjust height for the search field */
+  padding: 8px 12px !important;  /* Adjust padding for the search field */
+}
+
+.some .MuiInputBase-root.MuiOutlinedInput-root {
+  font-size: 12px !important; /* Font size adjustment */
+  line-height: 20px !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure placeholder text is centered */
+.some .MuiInputBase-input::placeholder {
+  text-align: center !important;
+  font-size: 12px !important;
+}
+.MuiChip-root {
+  font-size: 10px !important;  /* Reduce the font size for the chip */
+  height: 20px !important;  /* Reduce the chip height */
+  padding: 0 4px !important;  /* Adjust the padding */
+}
+
+.MuiChip-filled {
+  background-color: #e0e0e0 !important;  /* You can also change the background color */
+}
+
+.MuiChip-sizeMedium {
+  font-size: 10px !important;  /* Reduce the font size for medium-sized chips */
+  height: 20px !important;  /* Adjust the height for medium-sized chips */
+}
+
+.MuiChip-colorDefault {
+  color: #000 !important;  /* Default text color */
+  background-color: #f0f0f0 !important;  /* Default background color */
+}
+
+.MuiChip-filledDefault {
+  background-color: #d3d3d3 !important;  /* You can adjust this color */
+}
+
+.MuiChip-label {
+  padding: 2px 4px !important;  /* Adjust label padding */
+  font-size: 10px !important;  /* Adjust the font size */
+}
+
+.MuiChip-labelMedium {
+  font-size: 10px !important;  /* Ensure medium variant is also resized */
+}
+.MuiSvgIcon-root {
+  font-size: 12px !important;  /* Adjust the font size (default is 24px) */
+  width: 16px !important;      /* Set the width to match the font size */
+  height: 16px !important;     /* Set the height to match the font size */
+}
+
+.MuiSvgIcon-fontSizeMedium {
+  font-size: 12px !important;  /* Override the medium size icon */
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* In your global CSS file */
+.custom-textfield {
+  width: 70px !important;
+}
+/* Custom Tailwind Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Font Size Utilities */
+  .fs12 {
+    font-family:'Source Sans 3', sans-serif!important; /* Apply Roboto */
+    font-size: 12px !important;
+  }
+
+  .fs10 {
+    font-family:'Source Sans 3', sans-serif!important; /* Apply Roboto */
+    font-size: 10px !important; 
+  }
+}
+.scrollable {
+  overflow-y: auto;
+  scrollbar-width: thin;          /* Firefox */
+  scrollbar-color: #888 #f1f1f1;  /* Firefox */
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+/* Reduce the height and padding of the Select component */
+.form-select .MuiSelect-root {
+  min-height: 15px; /* Adjust the overall height */
+  padding: 4px; /* Adjust padding inside the select */
+}
+
+.form-select .MuiInputBase-input {
+  padding: 1px; /* Adjust padding */
+  height: 10px; /* Adjust the height of the inner text container */
+  text-align: center !important; /* Center the text horizontally */
+  display: flex !important; /* Enable flex layout */
+  align-items: center !important; /* Center the text vertically */
+  justify-content: center !important; /* Center the text horizontally */
+  width: 100% !important;
+}
+/* Optionally, style the placeholder text */
+.form-select .MuiSelect-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+/* styles.css */
+.select-input {
+  text-align: center !important;
+}
+
+.select-input .MuiSelect-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-label {
+  text-align: center !important;
+}
+/* global.css */
+
+/* For Webkit browsers (Chrome, Safari) */
+
+/* Vertical Scrollbar (Y-axis) */
+::-webkit-scrollbar {
+  width: 2px; /* Vertical scrollbar width */
+  height: 5px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 1px; /* Rounded scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Change color on hover */
+}
+
+/* Horizontal Scrollbar (X-axis) */
+::-webkit-scrollbar-horizontal {
+  height: 1px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-thumb-horizontal {
+  background-color: #888; /* Color of the horizontal scrollbar thumb */
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb-horizontal:hover {
+  background-color: #555;
+}
+
+.MuiSnackbarContent-root {
+  background-color: #1976d2 !important;  /* Primary color */
+  color: #fff !important;                /* White text color */
+  font-size: 14px !important;            /* Font size */
+  font-family:'Source Sans 3', sans-serif; /* Font family */
+}
+/* styles.css or global.css */
+.icon-button-outline {
+  border-radius: 50% !important;
+  border: 1px solid !important;
+  border-color: #1976d2 !important; /* Assuming primary.main is blue */
+  transition: background-color 0.3s, color 0.3s !important;
+}
+
+.icon-button-outline:hover {
+  background-color: #1976d2 !important; /* Hover background color */
+  color: white !important; /* White icon color on hover */
+}
+
+.menu-header{
+  padding-left:10px !important;
+  height: 35px !important;
+  width: 30px !important; 
+}
+
+
+
+/* globals.css (or any CSS module you import) */
+.MuiTableCell-root {
+  padding: 0.5rem 1rem !important;      /* keep your original padding */
+  font-size: 0.8125rem !important;
+}
+
+/* Header – always centered */
+.MuiTableCell-head {
+  text-align: center !important;
+  vertical-align: middle !important;
+  font-weight: bold !important;
+  font-size: 0.875rem !important;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* Body – default left */
+.MuiTableCell-body {
+  text-align: left !important;
+}
+
+/* Numbers → right */
+.MuiTableCell-body.numeric {
+  text-align: right !important;
+}
+
+
+
+.inventory-table-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.inventory-table-scroll:hover,
+.inventory-table-scroll.inventory-table-is-scrolling {
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.inventory-table-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.inventory-table-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.inventory-table-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 999px;
+}
+
+.inventory-table-scroll:hover::-webkit-scrollbar-thumb,
+.inventory-table-scroll.inventory-table-is-scrolling::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}

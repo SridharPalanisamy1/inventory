@@ -1,0 +1,136 @@
+.navbar {
+  background-color: white !important; /* Change background to white */
+  padding: 1px !important;
+  margin-left: 5px;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  color: black !important; /* Change text color to black */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important; /* Add a subtle shadow */
+
+}
+
+.navbar h1 {
+  font-size: 12px !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+  margin: 0 !important;
+  color: black !important; /* Change text color to black */
+}
+
+.navbar h2 {
+  font-size: 12px !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+  color: black !important; /* Change text color to black */
+}
+
+.navbar button {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 2px 2px !important;
+  color: black !important; /* Change button text color to black */
+  cursor: pointer !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+  font-size: 12px !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+}
+
+.navbar-actions {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar-icon {
+  font-size: 30px !important;
+  color: black !important; /* Change icon color to black */
+}
+
+.text-black {
+  color: black !important; /* Change text color to black */
+}
+
+.text-lg {
+  font-size: 1.25rem !important;
+}
+
+.ml-2 {
+  margin-left: 8px !important;
+}
+
+.ml-4 {
+  margin-left: 16px !important;
+}
+.logo{
+  width: 80px !important;
+  height: 40px !important;
+  object-fit: contain !important;
+}
+.navbar-logout {
+  display: flex !important;
+  align-items: center !important;
+  border: 1px solid black !important; /* Change border color to black */
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
+  margin-left: 16px !important;
+}
+
+.navbar-image {
+  width: 150px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+}
+
+/* Apply styles to the .module-name class */
+.MuiTypography-root.module-name {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-weight: bold !important; /* Bold text */
+  font-size: 1rem !important; /* Larger font size */
+  margin: 0; /* Remove default margin */
+}
+
+/* Uppercase version of the class */
+.module-name-uppercase {
+  text-transform: uppercase !important;
+}
+.navbar-logo {
+  width: 60px !important;
+  height: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.no-logo {
+  font-size: 12px !important;
+  color: black !important;
+}
+
+.navbar-image {
+  width:50% !important;
+  height: 50% !important;
+  object-fit: contain !important;
+}
+
+
+
+/* Center module name properly */
+.module-name {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-weight: bold !important;
+  font-size: 1rem !important;
+  text-align: center !important;
+  flex-grow: 1 !important;
+}
+
+/* Prevent logo loading from expanding the layout */
+.navbar-logo img, .navbar-logo  {
+  width: 60px !important;
+  height: 30px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+.no-logo{
+  object-fit: cover !important;
+  display: block !important;
+}

@@ -1,0 +1,119 @@
+/* Global Button Styling */
+.btn-navy-blue {
+  background-color: #2d7dcd; /* Navy blue background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  margin: 0.1rem; /* Further reduced margin for smaller spacing */
+  font-size: 0.5rem; /* Smaller font size (8px) */
+  padding: 2px 6px; /* Further reduced padding for smaller button size */
+}
+
+.btn-navy-blue:hover {
+  background-color: #8da0b5; /* Slightly darker navy blue on hover */
+  transform: scale(1.03); /* Slight hover effect */
+}
+
+.btn-navy-blue:focus {
+  box-shadow: 0 0 0 0.15rem rgba(1, 8, 23, 0.4); /* Smaller focus outline */
+}
+
+/* Submenu container */
+.submenu-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0; /* Adjusted margin */
+}
+
+/* Drawer Paper */
+.drawer-paper {
+  width: 200px; /* Keep width */
+  box-sizing: border-box;
+  background-color: #1976d2; /* Blue theme */
+  color: white;
+  border-radius: 6px; /* Slightly reduce border-radius */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  font-family: 'Roboto', sans-serif;
+  transition: width 0.3s;
+}
+
+/* Drawer Header */
+.drawer-header {
+  padding: 6px; /* Reduced padding */
+  font-size: 0.65rem; /* Smaller font size */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Menu Item */
+.menu-item {
+  font-size: 0.5rem; /* Smaller font size for menu items (8px) */
+  font-weight: 350; /* Normal font weight */
+  border-radius: 4px; /* Smaller border-radius */
+  margin: 1px 0; /* Less margin between items */
+  padding: 4px 6px; /* Further reduced padding */
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #1565c0; /* Darker blue on hover */
+}
+
+.menu-item.active {
+  background-color: #0d47a1; /* Even darker blue for active items */
+}
+
+/* Global Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.5rem; /* Global font size for table (8px) */
+}
+
+table th,
+table td {
+  padding: 2px; /* Padding for table cells */
+  text-align: left;
+  overflow: hidden; /* Prevent overflow */
+  white-space: normal; /* Allow text to wrap onto multiple lines */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text if needed */
+
+  /* Set default width and height */
+  width: 60px; /* Reduced width for all cells */
+  min-height: 20px; /* Reduced minimum height for cells */
+  max-height: 40px; /* Optional: max height to prevent excessive growth */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 600px) {
+  table th,
+  table td {
+    width: 50px; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+/* Auto width class */
+.w-auto {
+  width: auto; /* Set width to auto */
+  min-width: 80px; /* Optional: minimum width */
+  max-width: none; /* Remove maximum width restriction */
+}
+
+/* Custom date field */
+.custom-date-field {
+  width: 80px; /* Set your desired width */
+}
+/* styles.css
+.button-small {
+  width: 60px;         
+  height: 45px;        
+  font-size: 0.5rem;  
+  padding: 5px;
+}
+
+.wh15{
+  width: 15px;
+  height:15px;
+} */
+
